@@ -1,0 +1,174 @@
+body {
+  display: flex;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.col-left {
+  display: flex;
+  align-items: center;
+  background-image: url("./images/bg-main-desktop.png");
+  width: 483px;
+  height: 100vh;
+}
+
+.card {
+  color: #fff;
+  position: absolute;
+  margin-left: 130px;
+  align-content: center;
+  height: 520px;
+  width: 550px;
+}
+
+.frontCard {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  background-image: url("./images/bg-card-front.png");
+  width: 447px;
+  height: 245px;
+  left: 0;
+}
+.cardlogo{
+  position: absolute;
+  top: 27px;
+  left: 27px;
+  width: 100px;
+  height: 55px;
+  
+}
+
+.cardNumber {
+  position: absolute;
+  font-size: 35px;
+  bottom: 30px;
+  left: 20px;
+
+}
+
+
+
+.name {
+  text-transform: uppercase;
+  padding-left:  20px;
+  left: 0;
+  padding-bottom: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.date {
+  position: absolute;
+  padding-right: 20px;
+  right: 0;
+  bottom: 0;
+}
+
+.backCard {
+  position: absolute;
+  background-image: url("./images/bg-card-back.png");
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 447px;
+  height: 245px;
+  right: 0px;
+  bottom: 0;
+}
+
+.keyCard {
+  right: 60px;
+  position: relative;
+}
+.col-right {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  width: 75%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+div.formularz{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 150px;
+  width: 40%;
+  height: 300px;
+  color: hsl(278, 68%, 11%);
+}
+
+form{
+  padding: 20px 0;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid hsl(279, 6%, 55%);
+}
+
+
+.cardData{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.expDate{
+  display: flex;
+  flex-direction: column;
+
+  width: 25%
+}
+
+.mmyy{
+
+  display: block;
+  width: 20%
+}
+
+.cvc{
+  display: block;
+  width: 45%
+}
+
+
+button{
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 13px;
+
+
+}
+
+
+
+
+/* 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
