@@ -1,3 +1,33 @@
+.thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(278deg, 68%, 11%);
+}
+
+.thanks p {
+  color: grey;
+}
+
+.accept {
+  background-image: url(../../src/images/icon-complete.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+}
+
+.continue {
+  background-color: hsl(278deg, 68%, 11%);
+  color: white;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 13px;
+  width: 100%;
+}
+
 body {
   display: flex;
   font-family: "Space Grotesk", sans-serif;
@@ -8,7 +38,7 @@ body {
 .col-left {
   display: flex;
   align-items: center;
-  background-image: url("./images/bg-main-desktop.png");
+  background-image: url("../../src/images/bg-main-desktop.png");
   width: 483px;
   height: 100vh;
 }
@@ -26,18 +56,18 @@ body {
   position: absolute;
   display: flex;
   justify-content: left;
-  background-image: url("./images/bg-card-front.png");
+  background-image: url("../../src/images/bg-card-front.png");
   width: 447px;
   height: 245px;
   left: 0;
 }
-.cardlogo{
+
+.cardlogo {
   position: absolute;
   top: 27px;
   left: 27px;
   width: 100px;
   height: 55px;
-  
 }
 
 .cardNumber {
@@ -45,14 +75,11 @@ body {
   font-size: 35px;
   bottom: 30px;
   left: 20px;
-
 }
-
-
 
 .name {
   text-transform: uppercase;
-  padding-left:  20px;
+  padding-left: 20px;
   left: 0;
   padding-bottom: 0;
   position: absolute;
@@ -68,7 +95,7 @@ body {
 
 .backCard {
   position: absolute;
-  background-image: url("./images/bg-card-back.png");
+  background-image: url("../../src/images/bg-card-back.png");
   display: flex;
   align-items: center;
   justify-content: right;
@@ -82,6 +109,7 @@ body {
   right: 60px;
   position: relative;
 }
+
 .col-right {
   font-size: 13px;
   display: flex;
@@ -93,76 +121,65 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-div.formularz{
+.form-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 150px;
   width: 40%;
   height: 300px;
-  color: hsl(278, 68%, 11%);
+  color: hsl(278deg, 68%, 11%);
 }
 
-form{
+form {
   padding: 20px 0;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
 }
 
-input{
-
+input {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 20px;
   border-radius: 6px;
-  border: 1px solid hsl(279, 6%, 55%);
+  border: 1px solid hsl(279deg, 6%, 55%);
 }
 
-
-.cardData{
+.cardData {
   width: 100%;
   display: flex;
   justify-content: space-between;
-
-
 }
 
-.expDate{
+.expDate {
   display: block;
   width: 45%;
 }
 
-.dateofexp{
+.dateofexp {
   display: flex;
   justify-content: space-between;
 }
 
-.dateofexp input{
+.dateofexp input {
   width: 49%;
 }
 
-
-.cvc{
+.cvc {
   width: 50%;
 }
 
-
-button{
-  background-color: hsl(278, 68%, 11%);
+button {
+  background-color: hsl(278deg, 68%, 11%);
   color: white;
   border-radius: 9px;
   font-size: 15px;
   font-weight: bold;
   padding: 13px;
-
-
 }
-
-
-
 
 /* 
 .attribution {
@@ -172,4 +189,4 @@ button{
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+} *//*# sourceMappingURL=style.css.map */

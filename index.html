@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
   <title>Frontend Mentor | Interactive card details form</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
@@ -21,7 +21,7 @@
   <div class="col-left">
     <div class="card">
       <div class="frontCard">
-        <img src="./images/card-logo.svg" alt="" class="cardlogo" />
+        <img src="./src/images/card-logo.svg" alt="" class="cardlogo" />
         <p class="cardNumber">0000 0000 0000 0000</p>
         <p class="name">Jane Appleseed</p>
         <p class="date">00/00</p>
@@ -34,29 +34,32 @@
   </div>
 
   <div class="col-right">
-    <div class="formularz">
+    <div class="form-main" id="Form">
       <form action="">
         Cardholder Name
-        <input type="text" placeholder="e.g. Jane Appleseed">
+        <input type="text" placeholder="e.g. Jane Appleseed" id="Name">
         Card Number
-        <input type="text" placeholder="e.g. 1234 5678 9123 0000" />
+        <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="Cardnumber" />
 
         <div class="cardData">
-          <div class="expDate"> EXP. DATE (MM/YY) <section class="dateofexp"> <input type="text" placeholder="MM">
-              <input type="text" placeholder="YY"></section>
+          <div class="expDate"> EXP. DATE (MM/YY) <section class="dateofexp"> <input type="text" placeholder="MM" id="Month">
+              <input type="text" placeholder="YY" id="Year"></section>
           </div>
-          <section class="cvc">CVC<input type="text" placeholder="e.g. 123"></section>
+          <section class="cvc">CVC<input type="text" placeholder="e.g. 123" id="Key"></section>
 
         </div>
       </form>
-      <button id="send" class="send">Confirm</button>
+      <button id="Sendbtn" class="send">Confirm</button>
     </div>
   </div>
 
+
+  
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script type="module" src="./src/js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,32 @@
+.thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(278, 68%, 11%);
+
+    
+  }
+
+  .thanks p {
+    color: grey;
+  }
+
+  .accept{
+background-image: url(../../src/images/icon-complete.svg);
+background-repeat: no-repeat;
+background-position: center;
+width: 100px;
+height: 100px;
+
+  }
+
+  .continue{
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 13px;
+    width: 100%;
+  }
