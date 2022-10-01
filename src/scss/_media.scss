@@ -1,214 +1,222 @@
 @media (max-width: 1399px) {
-  body {
-    display: block;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
-    margin: 0;
-    height: 100vh;
-  }
+    body {
+        display: block;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 18px;
+        margin: 0;
+        height: 100vh;
+    }
 
-  .col-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../../src/images/bg-main-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 50%;
-    margin-bottom: 20px;
-  }
+    .col-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../src/images/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 8vw;
+    }
 
-  .card {
-    color: #fff;
-    position: absolute;
-    margin-left: 130px;
-    align-content: center;
-    height: 520px;
-    width: 95%;
-  }
+    .card {
+        color: #fff;
+        position: absolute;
+        // margin-left: 130px;
+        align-content: center;
+        height: 520px;
+        width: 90%;
+    }
 
-  .frontCard {
-    position: absolute;
-    display: flex;
-    justify-content: left;
-    background-image: url("../../src/images/bg-card-front.png");
-    width: 447px;
-    height: 245px;
-    left: 0;
-  }
-
-  .cardlogo {
-    position: absolute;
-    top: 27px;
-    left: 27px;
-    width: 100px;
-    height: 55px;
-  }
-
-  .cardNumber {
-    position: absolute;
-    font-size: 35px;
-    bottom: 30px;
-    left: 20px;
-  }
-
-  .name {
-    text-transform: uppercase;
-    padding-left: 20px;
-    left: 0;
-    padding-bottom: 0;
-    position: absolute;
-    bottom: 0;
-  }
-
-  .date {
-    position: absolute;
-    padding-right: 20px;
-    right: 0;
-    bottom: 0;
-  }
-
-  .backCard {
-    position: absolute;
-    background-image: url("../../src/images/bg-card-back.png");
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    .frontCard {
+        position: absolute;
+        // display: flex;
+        // justify-content: left;
+        background-image: url("../../src/images/bg-card-front.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80vw;
+        height: 44vw;
+        bottom: -5vw;
+        z-index: 1;
     
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    width: 80vw;
-    height: 44vw;
-    bottom: 0;
-  }
+     
+    }
 
-  .keyCard {
-    right: 60px;
-    position: relative;
-  }
+    .cardlogo {
+        position: absolute;
+        top: 27px;
+        left: 27px;
+        width: 100px;
+        height: 55px;
+    }
 
-  .col-right {
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-  }
+    .cardNumber {
+        position: absolute;
+        font-size: 35px;
+        bottom: 30px;
+        left: 20px;
+    }
 
-  .form-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    height: 300px;
-    color: hsl(278, 68%, 11%);
-  }
+    .name {
+        text-transform: uppercase;
+        padding-left: 20px;
+        left: 0;
+        padding-bottom: 0;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .date {
+        position: absolute;
+        padding-right: 20px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .backCard {
+        position: absolute;
+        background-image: url("../../src/images/bg-card-back.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 80vw;
+        height: 44vw;
+        right: 0;
+        
+        
+    
+    }
+
+    .keyCard {
+        right: 10vw;
+        position: relative;
+    }
+
+    .col-right {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .form-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: 300px;
+        color: hsl(278, 68%, 11%);
+    }
 }
 
 @media (min-width: 1400px) {
-  body {
-    display: flex;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
-    margin: 0;
-  }
+    body {
+        display: flex;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 18px;
+        margin: 0;
+    }
 
-  .col-left {
-    display: flex;
-    align-items: center;
-    background-image: url("../../src/images/bg-main-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 483px;
-    height: 100vh;
-  }
+    .col-left {
+        display: flex;
+        align-items: center;
+        background-image: url("../../src/images/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 483px;
+        height: 100vh;
+    }
 
-  .card {
-    color: #fff;
-    position: absolute;
-    margin-left: 130px;
-    align-content: center;
-    height: 520px;
-    width: 550px;
-  }
+    .card {
+        color: #fff;
+        position: absolute;
+        margin-left: 130px;
+        align-content: center;
+        height: 520px;
+        width: 550px;
+    }
 
-  .frontCard {
-    position: absolute;
-    display: flex;
-    justify-content: left;
-    background-image: url("../../src/images/bg-card-front.png");
-    width: 447px;
-    height: 245px;
-    left: 0;
-  }
-  .cardlogo {
-    position: absolute;
-    top: 27px;
-    left: 27px;
-    width: 100px;
-    height: 55px;
-  }
+    .frontCard {
+        position: absolute;
+        display: flex;
+        justify-content: left;
+        background-image: url("../../src/images/bg-card-front.png");
+        width: 447px;
+        height: 245px;
+        left: 0;
+    }
 
-  .cardNumber {
-    position: absolute;
-    font-size: 35px;
-    bottom: 30px;
-    left: 20px;
-  }
+    .cardlogo {
+        position: absolute;
+        top: 27px;
+        left: 27px;
+        width: 100px;
+        height: 55px;
+    }
 
-  .name {
-    text-transform: uppercase;
-    padding-left: 20px;
-    left: 0;
-    padding-bottom: 0;
-    position: absolute;
-    bottom: 0;
-  }
+    .cardNumber {
+        position: absolute;
+        font-size: 35px;
+        bottom: 30px;
+        left: 20px;
+    }
 
-  .date {
-    position: absolute;
-    padding-right: 20px;
-    right: 0;
-    bottom: 0;
-  }
+    .name {
+        text-transform: uppercase;
+        padding-left: 20px;
+        left: 0;
+        padding-bottom: 0;
+        position: absolute;
+        bottom: 0;
+    }
 
-  .backCard {
-    position: absolute;
-    background-image: url("../../src/images/bg-card-back.png");
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    width: 447px;
-    height: 245px;
-    right: 0px;
-    bottom: 0;
-  }
+    .date {
+        position: absolute;
+        padding-right: 20px;
+        right: 0;
+        bottom: 0;
+    }
 
-  .keyCard {
-    right: 60px;
-    position: relative;
-  }
+    .backCard {
+        position: absolute;
+        background-image: url("../../src/images/bg-card-back.png");
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 447px;
+        height: 245px;
+        right: 0px;
+        bottom: 0;
+    }
 
-  .col-right {
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    width: 75%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-  }
+    .keyCard {
+        right: 60px;
+        position: relative;
+    }
 
-  .form-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 150px;
-    width: 40%;
-    height: 300px;
-    color: hsl(278, 68%, 11%);
-  }
+    .col-right {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        width: 75%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .form-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 150px;
+        width: 40%;
+        height: 300px;
+        color: hsl(278, 68%, 11%);
+    }
 }

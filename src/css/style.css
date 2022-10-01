@@ -14,25 +14,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50%;
-    margin-bottom: 20px;
+    height: 50vw;
+    margin-bottom: 8vw;
   }
   .card {
     color: #fff;
     position: absolute;
-    margin-left: 130px;
     align-content: center;
     height: 520px;
-    width: 95%;
+    width: 90%;
   }
   .frontCard {
     position: absolute;
-    display: flex;
-    justify-content: left;
     background-image: url("../../src/images/bg-card-front.png");
-    width: 447px;
-    height: 245px;
-    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vw;
+    height: 44vw;
+    bottom: -5vw;
+    z-index: 1;
   }
   .cardlogo {
     position: absolute;
@@ -64,15 +64,17 @@
   .backCard {
     position: absolute;
     background-image: url("../../src/images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: right;
     width: 80vw;
     height: 44vw;
-    bottom: 0;
+    right: 0;
   }
   .keyCard {
-    right: 60px;
+    right: 10vw;
     position: relative;
   }
   .col-right {
