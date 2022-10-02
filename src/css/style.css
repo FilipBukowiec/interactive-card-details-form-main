@@ -4,7 +4,6 @@
     font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
     margin: 0;
-    height: 100vh;
   }
   .col-left {
     display: flex;
@@ -218,6 +217,10 @@
   font-weight: bold;
   padding: 13px;
   width: 100%;
+}
+
+.form-main {
+  margin-bottom: 50px;
 }
 
 form {
