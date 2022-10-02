@@ -1,3 +1,5 @@
+
+
 @media (max-width: 1399px) {
   body {
     display: block;
@@ -16,7 +18,7 @@
     background-size: cover;
     width: 100%;
     height: 50vw;
-    margin-bottom: 16vw;
+    margin-bottom: 25vw;
   }
 
   .card {
@@ -30,7 +32,6 @@
 
   .frontCard {
     position: absolute;
-
     background-image: url("../../src/images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,13 +45,13 @@
     position: absolute;
     top: 27px;
     left: 27px;
-    width: 100px;
-    height: 55px;
+    width: 14vw;
+    height: 7.6vw;
   }
 
   .cardNumber {
     position: absolute;
-    font-size: 35px;
+    font-size: 5vw;
     bottom: 30px;
     left: 20px;
   }
