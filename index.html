@@ -37,17 +37,19 @@
   <div class="col-right">
     <div class="form-main" id="Form">
       <form action="">
-        Cardholder Name
+       <p class="inputname">CARDHOLDER NAME</p> 
         <input type="text" placeholder="e.g. Jane Appleseed" id="Name">
-        Card Number
+        <p class="input-alert">Wrong format, only numbers</p>
+        <p class="inputname">CARD NUMBER</p> 
         <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="Cardnumber" />
+        <p class="input-alert">Wrong format, only numbers</p>
 
         <div class="cardData">
-          <div class="expDate"> EXP. DATE (MM/YY) <section class="dateofexp"> <input type="text" placeholder="MM" id="Month">
-              <input type="text" placeholder="YY" id="Year"></section>
+          <div class="expDate"> <p class="inputname">EXP. DATE (MM/YY) </p><section class="dateofexp"> <input type="text" placeholder="MM" id="Month">
+              <input type="text" placeholder="YY" id="Year"></section><p class="input-alert">Wrong format, only numbers</p>
           </div>
-          <section class="cvc">CVC<input type="text" placeholder="e.g. 123" id="Key"></section>
-
+          <section class="cvc"><p class="inputname">CVC</p><input type="text" placeholder="e.g. 123" id="CVC"><p class="input-alert">Wrong format, only numbers</p></section>
+          
         </div>
       </form>
       <button id="Sendbtn" class="btn">Confirm</button>
