@@ -69,6 +69,7 @@
     font-size: 15px;
     font-weight: bold;
     padding: 13px;
+    margin-top: 20px;
   
   }
   
@@ -89,3 +90,11 @@
     color: hsl(228, 45%, 44%);
   } */
   
+
+  .success{
+    border: 3px solid green;
+  }
+
+  .error{
+    border: 3px solid red;
+  }
