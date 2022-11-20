@@ -1,39 +1,41 @@
 // import { Confirmation } from "./confirmation.js";
 // const Confirmbtn = document.getElementById("Sendbtn");
-// Confirmbtn.addEventListener("click", (Confirmation));
+
 
 
 
 
 // const form = document.getElementById("Form");
 const name = document.getElementById('Name');
-const Cardnumber = document.getElementById('Cardnumber');
+const CardNumber = document.getElementById('Cardnumber');
 const Month = document.getElementById('Month');
 const CVC = document.getElementById('CVC');
 const form = document.getElementById('Form');
 
 const errorName = document.getElementById('errorName');
-const error
+const errorCardNumber = document.getElementById('errorCardNumber')
 
 
 form.addEventListener("submit", e => {
     e.preventDefault();
-
-    //jeżeli wszystko ok to wysyłamy
     if (name.value.length >= 3) {
-        form.submit();
-    } else {
-        //jeżeli nie to pokazujemy jakieś błędy
-        errorName.innerHTML='blblb';
+        name.classList.replace('error', 'success')
+        name.classList.add("success");
+        errorName.innerText = "";
+        // form.submit();
+
+    } else if (name.value === '' || name.value == null) {
+        errorName.innerText = "This field can't be blank";
+        name.classList.replace('succes', 'error')
+        name.classList.add('error');
+
+    } else if (name.value.length <= 2) {
+        name.classList.replace('succes', 'error')
+        name.classList.add('error');
+        errorName.innerText = 'The name is too short';
+
+
+
+
     }
-
-    if (Cardnumber.value.length = 20 && Cardnumber.value.length = 20 ) {
-        form.submit();
-    } else {
-        //jeżeli nie to pokazujemy jakieś błędy
-        errorName.innerHTML='blblb';
-    }
-
-
-
 })
