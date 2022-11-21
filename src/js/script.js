@@ -80,7 +80,7 @@ form.addEventListener("submit", e => {
     if (Year.value.length === 4 && Year.value.match(numbers)) {
         Year.classList.replace('error', 'success');
         Year.classList.add('success');
-        errorMonth.innerText = "";
+        errorYear.innerText = "";
 
 
     } else {
