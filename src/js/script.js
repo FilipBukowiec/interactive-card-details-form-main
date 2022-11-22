@@ -1,7 +1,7 @@
-// import { Confirmation } from "./confirmation.js";
-// const Confirmbtn = document.getElementById("Sendbtn");
 
-// const form = document.getElementById("Form");
+// import { Confirmation } from "./confirmation.js";
+const Confirmbtn = document.getElementById("Sendbtn");
+
 const name = document.getElementById("Name");
 const CardNumber = document.getElementById("Cardnumber");
 const Month = document.getElementById("Month");
@@ -12,6 +12,7 @@ const letters = /^[A-Za-z\s]+$/;
 const numbers = /^[0-9]+$/;
 const lol = !/^[0-9]+$/;
 const all = letters + numbers;
+const formdiv = document.getElementById("Formdiv");
 
 const errorName = document.getElementById("errorName");
 const errorCardNumber = document.getElementById("errorCardNumber");
@@ -25,7 +26,7 @@ form.addEventListener("submit", (e) => {
         name.classList.replace("error", "success");
         name.classList.add("success");
         errorName.innerText = "";
-        // form.submit();
+
     } else {
         name.classList.replace("succes", "error");
         name.classList.add("error");
@@ -93,3 +94,16 @@ form.addEventListener("submit", (e) => {
             "This field should be contains 3 characters, numbers only";
     }
 });
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if ((name.value.length >= 3 && name.value.match(letters)) && (CardNumber.value.length === 20 && CardNumber.value.match(numbers)) && (Month.value.length === 2 && Month.value.match(numbers)) && (Year.value.length === 4 && Year.value.match(numbers)) && (CVC.value.length === 3 && CVC.value.match(numbers))) {
+
+        Confirmbtn.addEventListener('click', () => {
+        formdiv.innerHTML = `<div class="thanks"><div class="accept"></div><h2>THANK YOU!</h2> <p> We've added your card details</p><button class="continue" id="Continue">Continue</button></div>`;
+    const Continue = document.getElementById("Continue");
+    Continue.addEventListener("click", () => location.reload());
+    })
+}
+})
