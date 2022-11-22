@@ -96,7 +96,7 @@ form.addEventListener("submit", (e) => {
 });
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     if ((name.value.length >= 3 && name.value.match(letters)) && (CardNumber.value.length === 20 && CardNumber.value.match(numbers)) && (Month.value.length === 2 && Month.value.match(numbers)) && (Year.value.length === 4 && Year.value.match(numbers)) && (CVC.value.length === 3 && CVC.value.match(numbers))) {
 
