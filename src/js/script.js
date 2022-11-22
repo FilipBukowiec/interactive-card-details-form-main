@@ -101,9 +101,18 @@ form.addEventListener("submit", (e) => {
     if ((name.value.length >= 3 && name.value.match(letters)) && (CardNumber.value.length === 20 && CardNumber.value.match(numbers)) && (Month.value.length === 2 && Month.value.match(numbers)) && (Year.value.length === 4 && Year.value.match(numbers)) && (CVC.value.length === 3 && CVC.value.match(numbers))) {
 
         Confirmbtn.addEventListener('click', () => {
+            name.value = "";
+            CardNumber.value = "";
+            Month.value = "";
+            Year.value = "";
+            CVC.value = "";
+           
         formdiv.innerHTML = `<div class="thanks"><div class="accept"></div><h2>THANK YOU!</h2> <p> We've added your card details</p><button class="continue" id="Continue">Continue</button></div>`;
     const Continue = document.getElementById("Continue");
+
     Continue.addEventListener("click", () => location.reload());
+    name.value = "";
+    
     })
 }
 })
