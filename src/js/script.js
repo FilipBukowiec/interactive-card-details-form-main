@@ -20,7 +20,7 @@ const errorMonth = document.getElementById("errorMonth");
 const errorYear = document.getElementById("errorYear");
 const errorCvc = document.getElementById("errorCvc");
 
-CardNumber.maxLength = 20;
+CardNumber.maxLength = 16;
 Month.maxLength = 2;
 Year.maxLength = 4;
 CVC.maxLength = 3;
@@ -43,7 +43,7 @@ form.addEventListener("submit", (e) => {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    if (CardNumber.value.length === 20 && CardNumber.value.match(numbers)) {
+    if (CardNumber.value.length === 16 && CardNumber.value.match(numbers)) {
         CardNumber.classList.replace("error", "success");
         CardNumber.classList.add("success");
         errorCardNumber.innerText = "";
@@ -104,7 +104,7 @@ form.addEventListener("submit", (e) => {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    if ((name.value.length >= 3 && name.value.match(letters)) && (CardNumber.value.length === 20 && CardNumber.value.match(numbers)) && (Month.value.length === 2 && Month.value.match(numbers)) && (Year.value.length === 4 && Year.value.match(numbers)) && (CVC.value.length === 3 && CVC.value.match(numbers))) {
+    if ((name.value.length >= 3 && name.value.match(letters)) && (CardNumber.value.length === 16 && CardNumber.value.match(numbers)) && (Month.value.length === 2 && Month.value.match(numbers)) && (Year.value.length === 4 && Year.value.match(numbers)) && (CVC.value.length === 3 && CVC.value.match(numbers))) {
 
         Confirmbtn.addEventListener('click', () => {
             name.value = "";
