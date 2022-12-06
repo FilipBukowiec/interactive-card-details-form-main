@@ -49,7 +49,7 @@ form.addEventListener("submit", (e) => {
         errorCardNumber.innerText = "";
     } else {
         errorCardNumber.innerText =
-            "This field should be contains 20 characters, numbers only";
+            "This field should be contains 16 characters, numbers only";
         CardNumber.classList.replace("succes", "error");
         CardNumber.classList.add("error");
     }
